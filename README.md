@@ -7,25 +7,25 @@ An API which lets you deal cards from a deck, shuffle cards using FastAPI and Uv
 # Local Run
 
 ```bash
-pip install - r requirements.txt && uvicorn cards_deck.game.app: app - -reload - -host 0.0.0.0 - -port 8000
+pip install -r requirements.txt && uvicorn cards_deck.game.app:app --reload --host 0.0.0.0 --port 8000
 ```
 
 # Docker Run
 ```bash
-docker build - t pokerdeck .
+docker build -t pokerdeck .
 ```
 
 ```bash
 # runs docker container with port forwarding
-docker run - p 8000: 8000 - d pokerdeck
+docker run -p 8000:8000 -d pokerdeck
 ```
 
 # call API to get deck status
 
 ```bash
-curl "http://localhost:8000/v1/deck_status/" - X GET  # get deck status
-curl "http://localhost:8000/v1/shuffle/" - X GET  # shuffle deck
-curl "http://localhost:8000/v1/deal/?ncards=4" - X GET  # deal n cards
+curl "http://localhost:8000/v1/deck_status/" -X GET # get deck status
+curl "http://localhost:8000/v1/shuffle/" -X GET # shuffle deck
+curl "http://localhost:8000/v1/deal/?ncards=4" -X GET # deal n cards
 ```
 
 # Improvements

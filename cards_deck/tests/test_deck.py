@@ -1,7 +1,6 @@
 import pytest
 from cards_deck.game.deck import Deck, Card
 
-
 @pytest.fixture
 def deck():
     return Deck()
