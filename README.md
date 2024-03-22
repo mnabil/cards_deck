@@ -20,7 +20,7 @@ docker build -t pokerdeck .
 docker run -p 8000:8000 -d pokerdeck
 ```
 
-# call API to get deck status
+# call API to get deck status, shuffle or deal
 
 ```bash
 curl "http://localhost:8000/v1/deck_status/" -X GET # get deck status
