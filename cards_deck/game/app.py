@@ -38,9 +38,11 @@ async def deal_card(ncards: int = 1):
         for i in range(ncards):
             dealt_card = deck.deal_one_card()
             dealt_cards.append(str(dealt_card))
-            Logger.debug("Dealing %s card[s], << %s >> \n Remaining cards: %s" % (
-                ncards, dealt_cards, len(deck)))
-        return {"message": f"Dealing {ncards} card[s]: {', '.join(dealt_cards)}, Number of Remaining cards: {len(deck)}"}
+            Logger.debug(
+                "Dealing %s card[s], << %s >> \n Remaining cards: %s" %
+                (ncards, dealt_cards, len(deck)))
+        return {
+            "message": f"Dealing {ncards} card[s]: {', '.join(dealt_cards)}, Number of Remaining cards: {len(deck)}"}
     except ValueError as e:  # exception handeling
         return {"message": str(e)}
 
