@@ -7,7 +7,7 @@ An API which lets you deal cards from a deck, shuffle cards using FastAPI and Uv
 # Local Run
 
 ```bash
-pip install - r requirements.txt & & uvicorn cards_deck.game.app: app - -reload - -host 0.0.0.0 - -port 8000
+pip install - r requirements.txt && uvicorn cards_deck.game.app: app - -reload - -host 0.0.0.0 - -port 8000
 ```
 
 # Docker Run
