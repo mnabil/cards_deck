@@ -2,7 +2,7 @@
 # Info about service
 An API which lets you deal cards from a deck, shuffle cards using FastAPI and Uvicorn in Python3
 
-(Just a demonstration for making a big project from small problems such as the deck of cards problem)
+(Just a demonstration of an app from small problems such as the deck of cards problem)
 
 # Local Run
 
